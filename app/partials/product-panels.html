@@ -1,0 +1,46 @@
+<section>
+	<div class="centrar">
+		<ul class="nav nav-pills nav-justified">
+			<li ng-class="{ active: panel.isSelected(1) }"><a href ng-click="panel.selectTab(1)">Descripción</a></li>
+			<li ng-class="{ active: panel.isSelected(2) }"><a href ng-click="panel.selectTab(2)">Comentarios</a></li>
+		</ul>	
+	</div>
+	<br>
+	<div class="panel" ng-show="panel.isSelected(1)">		
+		<p>{{product.description}}</p>		
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">		
+		<blockquote ng-repeat="review in product.reviews">
+			<b>Estrellas: {{review.stars}}</b>
+			<p>{{review.body}}</p>
+			<cite class="clearfix">- {{review.author}}</cite>
+		</blockquote>
+		<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
+			<div class="well well-sm">
+				<h5>Tu comentario se veria asi</h5>
+				<blockquote>			
+					<b>Estrellas: {{reviewCtrl.review.stars}}</b>
+					<p>{{reviewCtrl.review.body}}</p>
+					<cite class="clearfix">- {{reviewCtrl.review.author}}</cite>
+				</blockquote>
+			</div>
+
+			<h4>Deja tu revisión de este animal</h4>
+			<fieldset class="form-group">
+				<select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Estrellas" required>
+					<option value>Califica este animal</option>
+				</select>
+			</fieldset>
+			<fieldset class="form-group">
+				<textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Escribe aquí tu comentario" required></textarea>
+			</fieldset>
+
+			<fieldset class="form-group">
+				<input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="agustin@ejemplo.com" title="Email" required/>	
+			</fieldset>
+			<fieldset class="form-group">
+				<input type="submit" class="btn btn-primary pull-right" value="Publicar revisión"/>
+			</fieldset>						
+		</form>
+	</div>				
+</section>

@@ -1,0 +1,27 @@
+img.chica{
+	width: 100px; height: auto;
+}
+img.mediana{
+	width: auto; height: 200px;
+	margin-left: 5%;
+}
+img.grande{
+	width: 300px; height: 300px;
+}
+.ng-invalid.ng-dirty{
+	border-color: red;
+}
+.ng-valid.ng-dirty{
+	border-color: green;
+}
+
+.animalPanel{
+	max-width: 500px;
+	padding: 1%;
+	margin: 0 auto;
+	margin-bottom: 1%;
+}
+
+.animalPanel .centrar{
+	text-align: center;
+}

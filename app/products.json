@@ -1,0 +1,96 @@
+[
+	{
+		"name": "Cabra",
+		"price": 549.99,
+		"description": "Animal muy tranquilo y loco, solo come pasto y toma agua en el día, a la noche requiere buena música y fernet con coca 50% y 50%.",
+		"canPurchase": "true",
+		"soldOut": "false",
+		"images": [{
+			"full": "img/cabra.png"
+		}],
+		"reviews": [
+			{
+				"stars": 5,
+				"body": "Recomiendo este animalito!",
+				"author": "joe@gmail.com"				
+			},
+			{
+				"stars": 2,
+				"body": "Es muy sucio",
+				"author": "matt@gmail.com"	
+			},
+			{
+				"stars": 4,
+				"body": "Es muy sucio como dice matt, pero igual es muy divertido",
+				"author": "pedrito@hotmail.com"	
+			}			
+		]
+	},
+	{
+		"name": "Ardilla",
+		"price": 49.99,
+		"description": "Animal pequeño y amigable, si se enoja se va de casa y no lo encontras más, la recomendacion es tratarla bien.",
+		"canPurchase": "true",
+		"soldOut": "false",
+		"images": [{
+			"full": "img/ardilla.png"
+		}],
+		"reviews": [
+			{
+				"stars": 5,
+				"body": "Recomiendo este animalito!",
+				"author": "joe@gmail.com"				
+			}
+		]
+	},
+	{
+		"name": "Oso",
+		"price": 1149.99,
+		"description": "Animal muy grande y salvaje, come pasto verde y a veces carne humana, pesa 5432 kg, requiere grua para transportar.",
+		"canPurchase": "true",
+		"soldOut": "false",
+		"images": [{
+			"full": "img/oso.png"
+		}],
+		"reviews": [
+			{
+				"stars": 5,
+				"body": "Recomiendo este animalito!",
+				"author": "joe@gmail.com"				
+			},
+			{
+				"stars": 2,
+				"body": "Es muy sucio",
+				"author": "matt@gmail.com"	
+			}
+		]
+	},
+	{
+		"name": "Pinguino",
+		"price": 14.50,
+		"description": "Animal blanco y negro, necesita una pileta con agua fria para vivir y sushi de salmon rosado para cenar.",
+		"canPurchase": "true",
+		"soldOut": "false",
+		"images": [{
+			"full": "img/pinguino.png"
+		}],
+		"reviews": [
+			{
+				"stars": 5,
+				"body": "Recomiendo este animalito!",
+				"author": "joe@gmail.com"				
+			},
+			{
+				"stars": 2,
+				"body": "Es muy sucio",
+				"author": "matt@gmail.com"	
+			},
+			{
+				"stars": 4,
+				"body": "Es muy sucio como dice matt, pero igual es muy divertido",
+				"author": "pedrito@hotmail.com"	
+			}
+		]
+	}
+
+]

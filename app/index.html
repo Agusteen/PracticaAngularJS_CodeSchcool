@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js"> 
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Animals Store | Inicio</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="app.js"></script>
+		<script src="js/directives/products.js"></script>
+	</head>
+	<body ng-controller="StoreController as store">
+		<header>		
+			<h1 class="text-center"><img src="/img/angular.png" class="chica"> Animals Store <img src="/img/angular.png" class="chica"></h1>
+			<h3 class="text-center"> – an Angular store – </h3>
+		</header>
+		<br>
+		<div class="panel panel-default animalPanel" ng-repeat="product in store.products | orderBy:'name'">
+			<div class="panel-body">
+				<h2 product-title></h2>
+				<product-panels></product-panels>
+			</div>
+		</div>
+	</body>
+</html>
