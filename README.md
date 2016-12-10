@@ -1,5 +1,11 @@
-Práctica AngularJS Curso Code School "Shaping Up with Angular JS"
------------------------------------------------------------------
+# Práctica AngularJS Curso Code School "Shaping Up with Angular JS"
 
-+ Con estructura clonada de angular-seed
+## Built With
 
+* [AngularJS]
+* [angular-seed]
+* [Bootstrap]
+
+## Authors
+
+* **Agustín Muñoz Campos** - [Agusteen](https://github.com/Agusteen)
